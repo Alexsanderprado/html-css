@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon ico.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagem Dinâmiva</h1>
+<p>Tente abrir esses site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="imagens/celular.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/tablet.png" type="image/png">
+    <img src="imagens/notebook.png" alt="imagem flexível">
+</picture>
+<h1>Reproduzindo aúdios</h1>
+<p>Vamos aprender a reproduzir aúdios em HTML5</p>
+<audio preload="none" autoplay controls>
+        <source src="audios/Dizzy-Sting.mp3" type="audio/mpeg">
+        <source src="audios/Dizzy-Sting.ogg" type="audio/ogg"><source src="audios/Dizzy-Sting.wav" type="audio/wav">  
+        <p>Infelizmente seu navegador não consegue reproduzir aúdios!<a href="audios/Dizzy-Sting.wav" download="Dizzy-Sting.mp3" type="audio/mpeg">clique aqui para baixar o arquivo mp3</a></p>
+</audio>
+</body>
+</html>

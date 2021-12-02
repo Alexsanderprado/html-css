@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--Nesse exercício, veremos as formas como as cores podem ser representadas em seu estilo, através do código style sendo usado Inline-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/favicon ico.ico" type="image/x-icon">
+    <title>Cores</title>
+</head>
+<body>
+    <h1>Cores em CSS através do codigo Inline</h1>
+    <p>Para entender esse exercicío, olhe bem atentamente o código fonte do arquivo digitado dentro do parâmetro style em cada um dos 4 titulos abaixo. As cores de todos os titulos são exatamente as mesmas. Mas o formato de representação muda conforme o padrão escolhido: <strong>por Nome, por código Hexadecimal, por código RGB ou por código HSL)</strong></p>
+    <!--Representação por nomes-->
+    <h2 style="background-color: darkblue; color: white;">Este título está colorido usando cores por nomes (como vinhamos fazendo até o momento)</h2>  
+    <p>No titulo acima, o fundo azul ficou com <strong>NOME</strong> configurado da seguinte forma: darkblue. Ou seja, o <strong>nome</strong> simplesmente escolhido na lista do VBS.</p>
+    <p>Já, o texto acima ficou com <strong>NOME</strong> configurado da seguinte forma: white. Ou seja, o <strong>nome</strong> simplesmente escolhido na lista do VBS.</p> 
+    <!--Representação por código Hexadecimal (3 pares de código hexadecimal representando ordenadamente as cores primárias vermelho, verde e azul)-->
+    <!--Decimal: 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F--> 
+    <h2 style="background-color: #00008b; color: #ffffff;">Este título está colorido usando cores por código Hexadecimal (3 pares de códigos alfanuméricos entre 0 a 9 e entre A a F: vermelho, verde e azul)</h2>  
+    <p>No titulo acima, o fundo azul ficou com <strong>HEXADECIMAL</strong> configurado da seguinte forma: <strong>#00008b</strong>. Ou seja, 00 de vermelho, 00 de verde e 8b de azul.</p>
+    <p>Já, o texto acima ficou com <strong>HEXADECIMAL</strong> configurado da seguinte forma: <strong>#ffffff</strong>. Ou seja, ff de vermelho, ff de verde e ff de azul.</p> 
+    <!--Representação por código RGB (3 blocos de código numérico entre 0 a 255 representando ordenadamente as cores primárias vermelho, verde e azul)-->
+    <h2 style="background-color: rgb(0, 0, 139); color: rgb(255, 255, 255);">Este título está colorido usando cores por código RGB (3 blocos de códigos numéricos entre 0 a 255: vermelho, verde e azul)</h2>  
+    <p>No titulo acima, o fundo azul ficou com <strong>RGB</strong> configurado da seguinte forma: <strong>rgb(0, 0, 139)</strong>. Ou seja, 0 de vermelho, 0 de verde e 139 de azul.</p>
+    <p>Já, o texto acima ficou com <strong>RGB</strong> configurado da seguinte forma: <strong>rgb(255, 255, 255)</strong>. Ou seja, 255 de vermelho, 255 de verde e 255 de azul.</p> <!--Representação por código HSL (3 blocos de código numérico entre 0 a 255, 0% a 100% e 0% a 100%, representando ordenadamente as nuâncias matiz, saturação e iluminância)-->
+    <h2 style="background-color: hsl(240, 100%, 27%); color: hsl(0, 0%, 100%);">Este título está colorido usando cores por código HSL (3 blocos de códigos numéricos entre 0 a 255, 0% a 100% e 0% a 100%: matiz/hue, saturação/saturation e iluminância/lightness)</h2>  
+    <p>No titulo acima, o fundo azul ficou com <strong>HSL</strong> configurado da seguinte forma: <strong>hsl(240, 100%, 27%)</strong>. Ou seja, 240 de matiz, 100% de saturação e 27% de iluminância.</p>
+    <p>Já, o texto acima ficou com <strong>HSL</strong> configurado da seguinte forma: <strong>hsl(0, 0%, 100%)</strong>. Ou seja, 0 de matiz, 0% de saturação e 100% de iluminância.</p>
+    <!--Representação por código RGBA (3 blocos de código numérico entre 0 a 255 representando ordenadamente as cores primárias vermelho, verde e azul + 1 código numérico entre 0.000 e 0.999 representando a transparência da combinação RGB anteriormente codificada)-->
+    <h2 style="background-color: rgba(0, 0, 139, 0.5); color: rgb(255, 255, 255);">Este título está colorido usando cores por código RGBA (3 blocos de códigos numéricos entre 0 a 255: vermelho, verde e azul) + (1 código numérico entre 0.000 a 0.999: grau de transparência)</h2>
+    <p>No titulo acima, o fundo azul sofreu aplicação de <strong>50% de transparência</strong>, acrescido posteriormente aos códigos RGB que já vimos acima: <strong>rgba(0, 0, 139, 0,5)</strong>. Ou seja, 0 de vermelho, 0 de verde, 139 de azul e 0,5 de transparência.</p>
+    <p>Já, o texto acima ficou mantido sem acrécimo de transparência com <strong>RGB</strong> configurado da seguinte forma: <strong>rgb(255, 255, 255)</strong>. Ou seja, 255 de vermelho, 255 de verde e 255 de azul.</p>
+    <h2 style="background-color: hsla(240, 100%, 27%, 0.5); color: rgb(255, 255, 255);">Este título está colorido usando cores por código HSLA (3 blocos de códigos numéricos entre 0 a 255, 0% a 100% e 0% a 100%: matiz/hue, saturação/saturation e iluminância/lightness) + (1 código numérico entre 0.000 a 0.999: grau de transparência)</h2>
+    <p>No titulo acima, o fundo azul sofreu aplicação de <strong>50% de transparência</strong>, acrescido posteriormente aos códigos HSL que já vimos acima: <strong>hsla(240, 100%, 27%, 0,5)</strong>. Ou seja, 240 de matiz, 100% de saturação, 27% de iluminância e 0,5 de transparência.</p>
+    <p>Já, o texto acima ficou mantido sem acréscimo de transparência com <strong>RGB</strong> configurado da seguinte forma: <strong>rgb(255, 255, 255)</strong>. Ou seja, 255 de vermelho, 255 de verde e 255 de azul.</p>       
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>mark {background-color:yellow);</style>
+    </head>
+<body>
+    <h1>Principais Formatações</h1>  
+    <h2>Negrito / Destaque</h2>  
+    <p>Nesta frase temos um texto <b>em negrito</b> usando a tag &lt;b &gt;.Porém, essa tag não é semântica e só dá ênfase a forma, contrapondo o principio do HTML5 qué de dar mais importância ao significado em detrimento a forma que, por sua vez, pode ser tratada no CSS3.</p>
+    <p>Nesta frase temos um termo <strong>em destaque</strong> usando a tag &lt;strong&gt;. Já, esta tag é semântica e dá ênfase ao significado respeitando esse principio do HTML5, além de permitir links para outras páginas desse assunto e destaques em mecanismos de busca. Além disso, também não deixa de dar certo destaque na sua forma uma vez que aparece em destaque.</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um texto <i>em Itálico</i>, usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nesta frase, temos um termo <em>em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h2>Texto Marcado</h2>
+    <p>Podemos criar também um texto <mark style="background-color:lime;">marcado</mark> usando a tag &lt;MARK&gt; e marcalo com cor preferida usando a &lt;style&gt; do CSS3.</p>
+    <p>Em outro parágrafo temos outro texto <mark>marcado</mark> com cor amarelo que é o padrão do html5 sem usar o parametro style da CSS3.</p>
+    Para <mark>marcar</mark> todos os textos com a mesma cor devemos partir para a CSS3 fazendo esse tag &lt;mark&gt; junto com a tag &lt;style&gt;lá na cabeça do documento.
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um texto <big>grande</big> e <small>pequeno</small> nesse paragráfo.<br> Cuidado! A tag &lt;big&gt; já está obsoleta na W3C mas ainda funciona. Já a tag &lt;small&gt; não está obsoleta provavelmente porque ela ainda tem significado e não só forma para a comunidade.</p>
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar um texto como <del>excluido</del>, para indicar que ele deve ser lido mas não deve ser considerado. Para isso temos a tag &lt;del&gt; (semântica).</p>
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido</ins> para dar ênfase e indicar que ele foi adicionado depois. Para isso temos a tag &lt;ins&gt; (semântica).</p>
+    Cuidado! Existe também a tag &lt;u&gt; para <u>sublinhar</u> um texto mas ela é não semãntica e provavelmente vai ficar obsoleta em breve.
+    <h2>Texto Sobrescrito</h2>
+    <p>para escrever coisas do tipo X elevado a 20 mais 3. no texto x20+3 fica X<sup>20</sup>+3</p>
+    <h2>Texto subescrito</h2>
+    <p>para escrever coisas do tipo formula da agua h2o fica H<sub>2</sub>O</p>
+</body>
+</html>

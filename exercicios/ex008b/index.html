@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+<h1>Outras Formatações</h1>
+<h2>Código-Fonte e Pré-Formatação</h2>
+<p>O comando document.getElementById('test') é escrito em linguagem JavaScript.<br>Obs: Escrito da forma acima fica muito feio porque a fonte das letras não é mono espaçada gerando até confusão na leitura do comando e identificação de que se trata de um comando de um programa.</p>
+<p>agora veja como esse mesmo comando fica usando a tag &lt;code&gt;: <code>document.getElementById('test')</code></p>
+<p>Outro exemplo com Phyton:<br> 
+    <code>
+    num = int(input('Digite um número')) 
+    if num % 2 == 0:
+        print(f'0 npumero {num} é par')
+    else:
+        print(f'0 número {num} é impar')
+    print('FIM DO PROGRAMA')
+</code></p>
+<p>No exemplo acima você pode notar que apesar de estar com monoespaçamento, ainda não está com uma cara legal para mostrar que se trata de um comando phyton! Para resolver isso, usaremos a tag &lt;pre&gt; em conjunto com a tag &lt;code&gt;. Veja como ficou o mesmo comando phyton agora:</P>
+<p><pre><code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'0 npumero {num} é par')
+else:
+    print(f'0 número {num} é impar')
+print('FIM DO PROGRAMA')
+    </code>
+</pre></p>
+<h2>Citações Simples</h2>
+<p>Como diria uma pai de um amigo: <q>O Computador é um burro muito rápido!</q> (a citação está entre aspas e com significado ao usar a tag &lt;q&gt, ao ivés de colocar as aspas manualmente);</p>
+<h2>Citações Completas</h2>
+<p>Segundo Jeff Lable, no seu livor HTM5 para leigos:<blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+para+leigos&printsec=frontcover">Agradeço miha adoravel esposa e meu curioso filho por me ajudarem nesse licvro</blockquote></p>
+<h2>Abreviações</h2>
+<p>Estou estudando <abbr title="HypperText Markup Language">HTML5</abbr> e <abbr title="Cascading Style Sheets">CSS3</abbr>. Estou adorando!</p>
+<h2>texto Invertido</h2>
+<p><bdo dir="rtl">Estou Aprendendo a crias coisas em HTML</bdo></p>
+<p><bdo dir="ltr">estou aprendendo a criar coisas em HTML</bdo></p>
+</body>
+</html>
