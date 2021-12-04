@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        shorthand para imagem de fundo
+    </title>
+
+    <style>
+        body {
+            height: 100vh;
+
+            /*
+            background-color:black;
+            background-image: url('imagens/wallpaper003.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+            /* 
+            shorthand - background
+        color > image > position > repeat > [size] > attachment */
+
+            background: black url('imagens/wallpaper003.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        main {
+            font-size: 1.5em;;
+            background-image: radial-gradient(circle, gray, rgba(145, 8, 8, 0.274));
+            color: aliceblue;
+            border: 3px solid white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            max-width: 300px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+
+        <h1>
+            Testando shorthand em imagem de fundo
+        </h1>
+        <p>
+            Este exercicio é exatamente igual ao fundo 007. Mas dessa vez, as propriedades de imagens de fundo foram resumidas em uma shorthand. a ordem da shorthand é <strong>color > image > position > repeat > [size] > attachment</strong> . Apesar do size estar na shorthand ele não funcionou e por isso deve ser declarado separadamente. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque recusandae nam placeat optio vel fuga laudantium esse odit saepe debitis quae sunt magnam molestiae dolores eius, eos aspernatur corrupti inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa laborum aspernatur? Fugit ullam in, expedita est reiciendis ex aut, cum, fugiat culpa quidem laboriosam porro. Eaque, doloremque. Exercitationem, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, voluptas numquam debitis fugiat corporis doloremque rerum quia ut at et nemo consequuntur. Quo atque repellendus nobis nostrum possimus ex porro. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos ea tenetur repudiandae laboriosam officia recusandae, fuga cum praesentium quas aperiam dolore cumque nulla optio sunt excepturi perferendis blanditiis adipisci saepe. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis enim assumenda officia nobis nostrum sapiente doloribus ipsam magni dignissimos, iure autem incidunt temporibus cumque ex libero vel dicta, aspernatur aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet corrupti officiis eius quaerat debitis aperiam doloremque nostrum quia incidunt repudiandae nemo, maxime recusandae sed quos quam quasi ut laboriosam provident.
+        </p>
+
+    </main>
+
+</body>
+
+</html>
